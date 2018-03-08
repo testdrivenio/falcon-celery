@@ -1,4 +1,4 @@
-# project/__init__.py
+# project/app/__init__.py
 
 
 import json

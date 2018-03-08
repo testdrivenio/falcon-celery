@@ -3,11 +3,11 @@ version: '3.5'
 services:
 
   web:
-    build: .
+    build: ./project
     image: web
     container_name: web
     ports:
       - '8000:8000'
-    command: gunicorn -b 0.0.0.0:8000 project:app
     volumes:
-      - .:/usr/src/app
+      - './project:/usr/src/app'
+    command: gunicorn -b 0.0.0.0:8000 app:app
