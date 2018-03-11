@@ -1,0 +1,23 @@
+[2018-03-11 19:40:55,919: INFO/MainProcess] Connected to redis://redis:6379/0
+[2018-03-11 19:40:55,930: INFO/MainProcess] mingle: searching for neighbors
+[2018-03-11 19:40:56,954: INFO/MainProcess] mingle: all alone
+[2018-03-11 19:40:56,968: INFO/MainProcess] celery@239c14f9e59a ready.
+[2018-03-11 19:41:09,190: INFO/MainProcess] Received task: app.tasks.fib[19e09d46-fe67-422a-b6ef-2142edc9a4c9]  
+[2018-03-11 19:41:15,209: INFO/ForkPoolWorker-1] Task app.tasks.fib[19e09d46-fe67-422a-b6ef-2142edc9a4c9] succeeded in 6.015676156996051s: [0, 1, 1, 2]
+[2018-03-11 19:42:33,951: INFO/MainProcess] Connected to redis://redis:6379/0
+[2018-03-11 19:42:33,963: INFO/MainProcess] mingle: searching for neighbors
+[2018-03-11 19:42:34,984: INFO/MainProcess] mingle: all alone
+[2018-03-11 19:42:35,011: INFO/MainProcess] celery@ec672146acaf ready.
+[2018-03-11 19:42:36,798: INFO/MainProcess] Events of group {task} enabled by remote.
+[2018-03-11 19:53:30,912: INFO/MainProcess] Connected to redis://redis:6379/0
+[2018-03-11 19:53:30,928: INFO/MainProcess] mingle: searching for neighbors
+[2018-03-11 19:53:31,951: INFO/MainProcess] mingle: all alone
+[2018-03-11 19:53:31,963: INFO/MainProcess] celery@bf05a4f5f5ba ready.
+[2018-03-11 19:53:34,402: INFO/MainProcess] Events of group {task} enabled by remote.
+[2018-03-11 19:53:40,550: INFO/MainProcess] Connected to redis://redis:6379/0
+[2018-03-11 19:53:40,565: INFO/MainProcess] mingle: searching for neighbors
+[2018-03-11 19:53:41,586: INFO/MainProcess] mingle: all alone
+[2018-03-11 19:53:41,599: INFO/MainProcess] celery@4d9c642f7d4a ready.
+[2018-03-11 19:53:43,751: INFO/MainProcess] Events of group {task} enabled by remote.
+[2018-03-11 19:58:03,501: INFO/MainProcess] Received task: app.tasks.fib[8af7ebed-0f2e-4341-acc8-f4b0dcc3a69f]  
+[2018-03-11 19:58:07,515: INFO/ForkPoolWorker-1] Task app.tasks.fib[8af7ebed-0f2e-4341-acc8-f4b0dcc3a69f] succeeded in 4.008592001002398s: [0, 1, 1]
