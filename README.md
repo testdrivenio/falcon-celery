@@ -10,7 +10,7 @@ Spin up the containers:
 $ docker-compose up -d
 ```
 
-Open your browser to http://localhost:8000/ping view the app or to http://localhost:5555 to view the RQ dashboard.
+Open your browser to http://localhost:8000/ping to view the app or to http://localhost:5555 to view the Flower dashboard.
 
 Trigger a new task:
 

@@ -1,4 +1,4 @@
-version: '3.5'
+version: '3.7'
 
 services:
 
@@ -7,9 +7,9 @@ services:
     image: web
     container_name: web
     ports:
-      - '8000:8000'
+      - 8000:8000
     volumes:
-      - './project:/usr/src/app'
+      - ./project:/usr/src/app
     command: gunicorn -b 0.0.0.0:8000 app:app
     environment:
       - CELERY_BROKER=redis://redis:6379/0
@@ -20,8 +20,8 @@ services:
   celery:
     image: web
     volumes:
-      - './project:/usr/src/app'
-      - './project/logs:/usr/src/app/logs'
+      - ./project:/usr/src/app
+      - ./project/logs:/usr/src/app/logs
     command: celery -A app.tasks worker --loglevel=info  --logfile=logs/celery.log
     environment:
       - CELERY_BROKER=redis://redis:6379/0
@@ -30,14 +30,14 @@ services:
       - web
       - redis
 
+  redis:
+    image: redis:5.0.3-alpine
+
   monitor:
     image: web
     ports:
-      - '5555:5555'
+      - 5555:5555
     command:  flower -A app.tasks --port=5555 --broker=redis://redis:6379/0
     depends_on:
       - web
       - redis
-
-  redis:
-    image: redis:3.2.11
