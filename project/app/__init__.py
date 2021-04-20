@@ -12,14 +12,14 @@ from app.tasks import fib
 class Ping(object):
     def on_get(self, req, resp):
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps('pong!')
+        resp.text = json.dumps('pong!')
 
 
 class CreateTask(object):
 
     def on_post(self, req, resp):
         raw_json = req.stream.read()
-        result = json.loads(raw_json, encoding='utf-8')
+        result = json.loads(raw_json)
         task = fib.delay(int(result['number']))
         resp.status = falcon.HTTP_200
         result = {
@@ -28,7 +28,7 @@ class CreateTask(object):
                 'task_id': task.id
             }
         }
-        resp.body = json.dumps(result)
+        resp.text = json.dumps(result)
 
 
 class CheckStatus(object):
@@ -37,10 +37,10 @@ class CheckStatus(object):
         task_result = AsyncResult(task_id)
         result = {'status': task_result.status, 'result': task_result.result}
         resp.status = falcon.HTTP_200
-        resp.body = json.dumps(result)
+        resp.text = json.dumps(result)
 
 
-app = falcon.API()
+app = falcon.App()
 
 app.add_route('/ping', Ping())
 app.add_route('/create', CreateTask())
