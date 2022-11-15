@@ -1,0 +1,26 @@
+[2022-11-15 17:36:34,506: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error -2 connecting to redis:6379. Name does not resolve..
+Trying again in 2.00 seconds... (1/100)
+
+[2022-11-15 17:36:36,521: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error -2 connecting to redis:6379. Name does not resolve..
+Trying again in 4.00 seconds... (2/100)
+
+[2022-11-15 17:36:40,541: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error -2 connecting to redis:6379. Name does not resolve..
+Trying again in 6.00 seconds... (3/100)
+
+[2022-11-15 17:36:46,573: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error -2 connecting to redis:6379. Name does not resolve..
+Trying again in 8.00 seconds... (4/100)
+
+[2022-11-15 17:36:54,615: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error -2 connecting to redis:6379. Name does not resolve..
+Trying again in 10.00 seconds... (5/100)
+
+[2022-11-15 17:37:04,639: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error -2 connecting to redis:6379. Name does not resolve..
+Trying again in 12.00 seconds... (6/100)
+
+[2022-11-15 17:37:16,676: ERROR/MainProcess] consumer: Cannot connect to redis://redis:6379/0: Error -2 connecting to redis:6379. Name does not resolve..
+Trying again in 14.00 seconds... (7/100)
+
+[2022-11-15 23:47:37,711: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-11-15 23:47:37,715: INFO/MainProcess] mingle: searching for neighbors
+[2022-11-15 23:47:38,725: INFO/MainProcess] mingle: all alone
+[2022-11-15 23:47:38,742: INFO/MainProcess] celery@7fdd7f545554 ready.
+[2022-11-15 23:47:42,568: INFO/MainProcess] Events of group {task} enabled by remote.
